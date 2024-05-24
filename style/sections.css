@@ -1,6 +1,29 @@
 #featured {
   img {
     height: 100%;
-    obrject-fit: cover;
+    object-fit: cover;
+  }
+}
+
+.card {
+  border-radius:4px;
+  overflow: hidden;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    top:50%;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+  }
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    color: white;
+    text-align: left;
+    transition: 0.3s;
   }
 }

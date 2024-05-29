@@ -18,12 +18,20 @@
   }
   figcaption {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding: 24px;
     color: white;
     text-align: left;
     transition: 0.3s;
+    bottom:0;
+    text-overflow: ellipsis;
+   
+
+    &:has(.text-lg){
+      padding: 12px;
+    }
+
+    h2{
+      margin-top: 8px;
+    }
   }
 }
